@@ -1,0 +1,27 @@
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/geist@latest/index.css');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-brand-dark;
+  }
+}
+
+.glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.btn-primary {
+    @apply bg-brand-primary text-white px-4 py-2 rounded-md hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-brand-primary/30;
+}
+
+.input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all bg-white pl-10;
+}
